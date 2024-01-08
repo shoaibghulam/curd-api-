@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "351a2cc1-38fa-48d2-9fd1-4aaa6f6ceb3c",
+		"name": "react class",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10294043",
+		"_collection_link": "https://lunar-zodiac-122022.postman.co/workspace/Learning~2f8b7015-5083-4b68-87fb-a59f7b38e145/collection/10294043-351a2cc1-38fa-48d2-9fd1-4aaa6f6ceb3c?action=share&source=collection_link&creator=10294043"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "shoaibghulam",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "shoaibghulam",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "shoaib",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "ghulam",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "shoaibghulam@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shoaibghulam",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "shoaibghulam",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curd Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA0NzUxNjk0LCJpYXQiOjE3MDQ3NDgwOTQsImp0aSI6IjEzMWUzNzZiMTUwYzRlMjU4MDI3OWRhYjEyNjA5MzZkIiwidXNlcl9pZCI6MX0.7EZh1A8KYb_uaKuJirbthHr3UFduPpbqZ3P2eu9lNIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Shoaib",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghulam",
+							"type": "text"
+						},
+						{
+							"key": "contact_no",
+							"value": "0323253",
+							"type": "text"
+						},
+						{
+							"key": "Dob",
+							"value": "43432",
+							"type": "text"
+						},
+						{
+							"key": "Contact",
+							"value": "032325383",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "Absor Turbat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/curd",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curd Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA0NzUxNjk0LCJpYXQiOjE3MDQ3NDgwOTQsImp0aSI6IjEzMWUzNzZiMTUwYzRlMjU4MDI3OWRhYjEyNjA5MzZkIiwidXNlcl9pZCI6MX0.7EZh1A8KYb_uaKuJirbthHr3UFduPpbqZ3P2eu9lNIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Shoaib",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghulam",
+							"type": "text"
+						},
+						{
+							"key": "contact_no",
+							"value": "0323253",
+							"type": "text"
+						},
+						{
+							"key": "Dob",
+							"value": "112233",
+							"type": "text"
+						},
+						{
+							"key": "Contact",
+							"value": "032325383",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "Absor Turbat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/curd/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curd",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curd Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA0NzUxNjk0LCJpYXQiOjE3MDQ3NDgwOTQsImp0aSI6IjEzMWUzNzZiMTUwYzRlMjU4MDI3OWRhYjEyNjA5MzZkIiwidXNlcl9pZCI6MX0.7EZh1A8KYb_uaKuJirbthHr3UFduPpbqZ3P2eu9lNIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Shoaib",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghulam",
+							"type": "text"
+						},
+						{
+							"key": "contact_no",
+							"value": "0323253",
+							"type": "text"
+						},
+						{
+							"key": "Dob",
+							"value": "112233",
+							"type": "text"
+						},
+						{
+							"key": "Contact",
+							"value": "032325383",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "Absor Turbat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/curd/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curd",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curd Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA0NzUxNjk0LCJpYXQiOjE3MDQ3NDgwOTQsImp0aSI6IjEzMWUzNzZiMTUwYzRlMjU4MDI3OWRhYjEyNjA5MzZkIiwidXNlcl9pZCI6MX0.7EZh1A8KYb_uaKuJirbthHr3UFduPpbqZ3P2eu9lNIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Shoaib",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghulam",
+							"type": "text"
+						},
+						{
+							"key": "contact_no",
+							"value": "0323253",
+							"type": "text"
+						},
+						{
+							"key": "Dob",
+							"value": "112233",
+							"type": "text"
+						},
+						{
+							"key": "Contact",
+							"value": "032325383",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "Absor Turbat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/curd/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curd",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
